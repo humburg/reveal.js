@@ -38,6 +38,7 @@ $calloutTextColor: #373A36;
 $borderColor:     mix(#000, $backgroundColor, 20%);
 
 $activityHeadingSize: $heading4Size;
+$mainTitleSize: 1.25 * $heading2Size;
 
 section.has-dark-background {
 	&, h1, h2, h3, h4, h5, h6 {
@@ -97,6 +98,14 @@ section.has-dark-background {
     }
     .exercise {
         @include activity("\f303", 900);
+    }
+    .title-slide {
+        .main-title {
+            font-size: $mainTitleSize;
+        }
+        .author {
+            padding-top: map-get($spacers, 5);
+        }
     }
 }
 
