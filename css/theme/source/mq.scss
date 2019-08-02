@@ -30,7 +30,7 @@ $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
 $linkColor: #D6001C;
-$linkColorHover: lighten( $linkColor, 20% );
+$linkColorHover: #A6192E;
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 $highlightColor: #D6001C;
 $calloutColor: #D6D2C4;
@@ -39,6 +39,7 @@ $borderColor:     mix(#000, $backgroundColor, 20%);
 
 $activityHeadingSize: $heading4Size;
 $mainTitleSize: 1.25 * $heading2Size;
+$mainTitleBackground: $calloutColor;
 
 section.has-dark-background {
 	&, h1, h2, h3, h4, h5, h6 {
@@ -100,8 +101,10 @@ section.has-dark-background {
         @include activity("\f303", 900);
     }
     .title-slide {
+        background-color: $mainTitleBackground;
         .main-title {
             font-size: $mainTitleSize;
+            text-shadow: 2px 2px 4px mix(#000, $mainTitleBackground, 20%);
         }
         .author {
             padding-top: map-get($spacers, 5);
