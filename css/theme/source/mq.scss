@@ -110,6 +110,9 @@ section.has-dark-background {
             padding-top: map-get($spacers, 5);
         }
     }
+    .controls button {
+        color: $highlightColor;
+    }
 }
 
 // Theme template ------------------------------

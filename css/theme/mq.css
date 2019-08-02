@@ -80,6 +80,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   .reveal .title-slide .author {
     padding-top: 3rem; }
 
+.reveal .controls button {
+  color: #D6001C; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
